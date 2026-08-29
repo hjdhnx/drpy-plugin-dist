@@ -1,0 +1,73 @@
+{
+  "name": "drpy-node 官方插件分发",
+  "updated": "2026-08-29",
+  "plugins": [
+    {
+      "name": "req-proxy",
+      "version": "1.0.0",
+      "title": "请求代理服务",
+      "desc": "req代理服务",
+      "author": "hjdhnx",
+      "runtime": "binary",
+      "params": "-p 57571",
+      "platforms": [
+        "win32",
+        "linux",
+        "android"
+      ],
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.0/req-proxy-1.0.0.zip",
+      "sha256": "3feaca18bcb231188dfd7fdc807e873e773af27ef33e1f1cd361b032cacc7ff5",
+      "homepage": "https://github.com/hjdhnx/drpy-node"
+    },
+    {
+      "name": "pvideo",
+      "version": "1.0.0",
+      "title": "嗷呜视频适配代理",
+      "desc": "嗷呜适配代理服务",
+      "author": "hjdhnx",
+      "runtime": "binary",
+      "params": "-port 57572 -dns 8.8.8.8",
+      "platforms": [
+        "win32",
+        "linux",
+        "android"
+      ],
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.0/pvideo-1.0.0.zip",
+      "sha256": "ec5d687cd4f127156e57219feb9ffc53d770ba488fe5a301ecdcd8ee9fb94ae7",
+      "homepage": "https://github.com/hjdhnx/drpy-node"
+    },
+    {
+      "name": "pup-sniffer",
+      "version": "1.0.0",
+      "title": "drplayer嗅探服务",
+      "desc": "drplayer嗅探服务",
+      "author": "hjdhnx",
+      "runtime": "binary",
+      "params": "-port 57573",
+      "platforms": [
+        "win32",
+        "linux"
+      ],
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.0/pup-sniffer-1.0.0.zip",
+      "sha256": "23d9c495ad9d25c59ab329f36bcce617814526cbe8ae44b4851dbd77adb7ecfc",
+      "homepage": "https://github.com/hjdhnx/drpy-node"
+    },
+    {
+      "name": "mediaProxy",
+      "version": "1.0.0",
+      "title": "Go 媒体代理服务",
+      "desc": "go媒体代理服务",
+      "author": "hjdhnx",
+      "runtime": "binary",
+      "params": "-port 57574",
+      "platforms": [
+        "win32",
+        "linux",
+        "android"
+      ],
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.0/mediaProxy-1.0.0.zip",
+      "sha256": "b77c3a52a6bb49bcdb685c4e2717f4d2752a202fabad17da2e9cdc464b77c5dd",
+      "homepage": "https://github.com/hjdhnx/drpy-node"
+    }
+  ]
+}
