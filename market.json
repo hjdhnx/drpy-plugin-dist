@@ -1,6 +1,6 @@
 {
   "name": "drpy-node 官方插件分发",
-  "updated": "2026-08-29T08:03:38Z",
+  "updated": "2026-08-29T08:04:41Z",
   "plugins": [
     {
       "name": "req-proxy",
@@ -15,7 +15,7 @@
         "linux",
         "android"
       ],
-      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.1/req-proxy-1.0.1.zip",
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/req-proxy-v1.0.1/req-proxy-1.0.1.zip",
       "sha256": "6af11dd853ddf7ed184174e967ef0e47165a15e4021091e4b7b8c64045cd894e",
       "homepage": "https://github.com/hjdhnx/drpy-node"
     },
@@ -32,8 +32,8 @@
         "linux",
         "android"
       ],
-      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.1/pvideo-1.0.1.zip",
-      "sha256": "868d17d92153687ae66b83097dee19388533765ad82f934bbbbb80e80bcbeec1",
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/pvideo-v1.0.1/pvideo-1.0.1.zip",
+      "sha256": "66f1beedcc28bdfa377c8441dff985dd4c9ebda4d6ebd20aa7da06ff4abf0069",
       "homepage": "https://github.com/hjdhnx/drpy-node"
     },
     {

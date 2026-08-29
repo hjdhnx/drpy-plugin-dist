@@ -41,7 +41,7 @@ import json, sys, datetime
 name, version, sha = sys.argv[1:4]
 m = json.load(open('market.json', encoding='utf-8'))
 entry = next((e for e in m['plugins'] if e['name'] == name), None)
-download = f"https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v{version}/{name}-{version}.zip"
+download = f"https://github.com/hjdhnx/drpy-plugin-dist/releases/download/{name}-v{version}/{name}-{version}.zip"
 if entry:
     entry.update(version=version, download=download, sha256=sha)
 else:  # 新插件上架：从包内 manifest 生成清单条目
@@ -66,5 +66,5 @@ echo "==> 提交推送 + 发布 release v$VERSION"
 git add -A
 git commit -q -m "release: ${NAME} v${VERSION}" || echo "    (无变更需要提交)"
 git push -q origin main
-gh release create "v${VERSION}" "$ZPATH" --title "${NAME} v${VERSION}" --notes "${NAME} 发布 ${VERSION}。" >/dev/null
-echo "✓ 发布完成: https://github.com/hjdhnx/drpy-plugin-dist/releases/tag/v${VERSION}"
+gh release create "${NAME}-v${VERSION}" "$ZPATH" --title "${NAME} v${VERSION}" --notes "${NAME} 发布 ${VERSION}。" >/dev/null
+echo "✓ 发布完成: https://github.com/hjdhnx/drpy-plugin-dist/releases/tag/${NAME}-v${VERSION}"
