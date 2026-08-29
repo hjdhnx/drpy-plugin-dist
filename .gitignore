@@ -1,0 +1,3 @@
+# 大体积插件包不入库（GitHub 单文件上限 100MB），仅作为 release asset 分发
+build/
+dist/captcha-bypass-*.zip

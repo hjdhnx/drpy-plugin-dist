@@ -23,11 +23,19 @@ name, version, src, zpath = sys.argv[1:5]
 mp = os.path.join(src, 'plugin.json')
 manifest = json.load(open(mp, encoding='utf-8')) if os.path.exists(mp) else {}
 manifest.update({'name': name, 'version': version, 'runtime': manifest.get('runtime', 'binary')})
-files = sorted(f for f in os.listdir(src) if os.path.isfile(os.path.join(src, f)) and f != 'plugin.json')
+# 递归打包：含子目录（如 captcha-bypass 的 models/、public/），zip 内保留相对路径
+files = []
+for root, dirs, names in os.walk(src):
+    for f in sorted(names):
+        p = os.path.join(root, f)
+        if p == mp:
+            continue
+        files.append((p, os.path.relpath(p, src).replace(os.sep, '/')))
+files.sort(key=lambda x: x[1])
 with zipfile.ZipFile(zpath, 'w', zipfile.ZIP_DEFLATED) as z:
     z.writestr('plugin.json', json.dumps(manifest, ensure_ascii=False, indent=2))
-    for f in files:
-        z.write(os.path.join(src, f), f)
+    for p, arc in files:
+        z.write(p, arc)
 h = hashlib.sha256(open(zpath, 'rb').read()).hexdigest()
 print(h, len(files))
 PY
