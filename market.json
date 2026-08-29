@@ -1,10 +1,10 @@
 {
   "name": "drpy-node 官方插件分发",
-  "updated": "2026-08-29",
+  "updated": "2026-08-29T16:30:00Z",
   "plugins": [
     {
       "name": "req-proxy",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "请求代理服务",
       "desc": "req代理服务",
       "author": "hjdhnx",
@@ -15,8 +15,8 @@
         "linux",
         "android"
       ],
-      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.0/req-proxy-1.0.0.zip",
-      "sha256": "3feaca18bcb231188dfd7fdc807e873e773af27ef33e1f1cd361b032cacc7ff5",
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.1/req-proxy-1.0.1.zip",
+      "sha256": "6af11dd853ddf7ed184174e967ef0e47165a15e4021091e4b7b8c64045cd894e",
       "homepage": "https://github.com/hjdhnx/drpy-node"
     },
     {
