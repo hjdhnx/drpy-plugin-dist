@@ -1,6 +1,6 @@
 {
   "name": "drpy-node 官方插件分发",
-  "updated": "2026-08-29T16:30:00Z",
+  "updated": "2026-08-29T08:03:38Z",
   "plugins": [
     {
       "name": "req-proxy",
@@ -21,7 +21,7 @@
     },
     {
       "name": "pvideo",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "嗷呜视频适配代理",
       "desc": "嗷呜适配代理服务",
       "author": "hjdhnx",
@@ -32,8 +32,8 @@
         "linux",
         "android"
       ],
-      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.0/pvideo-1.0.0.zip",
-      "sha256": "ec5d687cd4f127156e57219feb9ffc53d770ba488fe5a301ecdcd8ee9fb94ae7",
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.1/pvideo-1.0.1.zip",
+      "sha256": "868d17d92153687ae66b83097dee19388533765ad82f934bbbbb80e80bcbeec1",
       "homepage": "https://github.com/hjdhnx/drpy-node"
     },
     {
