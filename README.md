@@ -22,6 +22,18 @@ https://raw.githubusercontent.com/hjdhnx/drpy-plugin-dist/main/market.json
 | pvideo | 嗷呜视频适配代理 | `-port 57572 -dns 8.8.8.8` | win / linux / android |
 | pup-sniffer | drplayer 嗅探服务 | `-port 57573` | win / linux |
 | mediaProxy | Go 媒体代理服务 | `-port 57574` | win / linux / android |
+| captcha-bypass | ddddocr 验证码识别服务（OCR/滑块/旋转，端口 7788，包体约 380MB，x64） | env `PORT=7788` | win / linux (x64) |
+
+### captcha-bypass 组装说明（上游资产再打包）
+
+上游 Hiram-Wong/captcha-bypass 以「每平台散装二进制 + 独立 models.zip」发布，不符合 drpyS 插件包规范，由 `prepare-captcha-bypass.sh` 组装后再走 `release.sh` 发布：
+
+```bash
+./prepare-captcha-bypass.sh 1.1.0   # 拉上游资产 -> 组装本地插件目录（含模型/ort-wasm 引导释放）
+./release.sh captcha-bypass 1.1.0   # 打包 + 更新 market.json + 发布 release
+```
+
+脚本处理了三个上游坑：模型文件名与内置默认路径不同步（`ocr_ppv5-cn.*` vs 内置默认 `ocr_pp.*`，需复制补齐，否则启动报误导性的 wasm 解析错误）；onnxruntime 首启需释放 `ort-wasm/`（Windows 上释放不可靠且 0 字节残骸会导致永久失败，脚本引导运行重试后随包预置）；释放产生的 `logs/` 不进包。大体积 zip（>100MB）通过 .gitignore 豁免入库，仅作为 release asset 分发。
 
 ## 版本发布 / 更新插件
 
