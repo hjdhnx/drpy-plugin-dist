@@ -1,6 +1,6 @@
 {
   "name": "drpy-node 官方插件分发",
-  "updated": "2026-08-31T05:43:44Z",
+  "updated": "2026-08-31T05:49:43Z",
   "plugins": [
     {
       "name": "req-proxy",
@@ -103,7 +103,7 @@
         "win32"
       ],
       "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/clash-v1.0.0/clash-1.0.0.zip",
-      "sha256": "c3a610d0795eefdb272a31f1c0968f20bb47266a634133378592a20931684508",
+      "sha256": "68a3b5aca36d8bb5edb8080c9d7c057077dba88b832252752a66dcdb2bbe4f93",
       "homepage": ""
     }
   ]
