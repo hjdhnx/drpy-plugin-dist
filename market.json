@@ -1,6 +1,6 @@
 {
   "name": "drpy-node 官方插件分发",
-  "updated": "2026-08-31T08:36:42Z",
+  "updated": "2026-08-31T09:24:07Z",
   "plugins": [
     {
       "name": "req-proxy",
@@ -108,7 +108,7 @@
     },
     {
       "name": "cctv-h5e",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "title": "央视H5E解密服务",
       "desc": "央视频 tv.cctv.com hls_h5e 加密TS→标准TS解密代理（TEA-16/G变换，密钥内嵌无需取key）。端口 7796（env PORT 可改）。接口：/resolve?guid=、/m3u8?url=、/ts?u=、/health。解密核心源自 letr007/CCTVVideoDownloader (GPLv3)，修改版源码在包内 source/ 目录。",
       "author": "hjdhnx",
@@ -123,8 +123,8 @@
         "linux-x64",
         "win32-x64"
       ],
-      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/cctv-h5e-v1.0.0/cctv-h5e-1.0.0.zip",
-      "sha256": "0c7a44f79b83895e68b0d5297a6d331be2dc1eb05623fa00b09eee23e213106d",
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/cctv-h5e-v1.1.0/cctv-h5e-1.1.0.zip",
+      "sha256": "7de37053175987e5f75f8c5902ac2769ad4175fa3b924f649e529688d31d58b0",
       "homepage": "https://github.com/hjdhnx/drpy-node"
     }
   ]
