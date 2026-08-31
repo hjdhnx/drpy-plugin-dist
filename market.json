@@ -1,6 +1,6 @@
 {
   "name": "drpy-node 官方插件分发",
-  "updated": "2026-08-29T10:46:24Z",
+  "updated": "2026-08-31T05:43:44Z",
   "plugins": [
     {
       "name": "req-proxy",
@@ -88,6 +88,23 @@
       "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/captcha-bypass-v1.1.0/captcha-bypass-1.1.0.zip",
       "sha256": "369c5cd2b99923732d56900ee4ec58576553fd5eeafc581d5338b9f387b16c60",
       "homepage": "https://github.com/Hiram-Wong/captcha-bypass"
+    },
+    {
+      "name": "clash",
+      "version": "1.0.0",
+      "title": "Clash 代理内核",
+      "desc": "Clash(mihomo) 代理内核 + metacubexd/dashboard 控制面板。仅支持 linux amd64；配置 config.yaml（端口/密钥），面板 /ui/；启动参数与环境变量见 README",
+      "author": "EylinSir",
+      "runtime": "node",
+      "entry": "index.js",
+      "params": "",
+      "env": {},
+      "platforms": [
+        "win32"
+      ],
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/clash-v1.0.0/clash-1.0.0.zip",
+      "sha256": "c3a610d0795eefdb272a31f1c0968f20bb47266a634133378592a20931684508",
+      "homepage": ""
     }
   ]
 }
