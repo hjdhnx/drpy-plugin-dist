@@ -1,6 +1,6 @@
 {
   "name": "drpy-node 官方插件分发",
-  "updated": "2026-08-31T13:49:41Z",
+  "updated": "2026-08-31T14:45:38Z",
   "plugins": [
     {
       "name": "req-proxy",
@@ -129,7 +129,7 @@
     },
     {
       "name": "hongguo-bridge",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "title": "红果短剧播放桥",
       "desc": "红果短剧签名/解密播放桥（Flask）：为红果短剧[短]等 ds 源提供接口签名、CENC 解密与 MP4 缓存（302 到本地解密文件，支持 Range）。默认端口 9877（--port 参数＞config.json port＞9979），/health 探活；首次播放每集需现场解密数十秒，之后命中缓存秒开。同机部署无需改配置；插件跨机部署时把 config.json 的 public_url 改为插件机器可达地址。",
       "author": "hjdhnx",
@@ -140,8 +140,8 @@
       "platforms": [
         "all"
       ],
-      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/hongguo-bridge-v0.1.4/hongguo-bridge-0.1.4.zip",
-      "sha256": "38b4a041fc014d55811f012c37239fa2310a9b7bd9649f94719c5de74dab7d0e",
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/hongguo-bridge-v0.1.5/hongguo-bridge-0.1.5.zip",
+      "sha256": "8058380b6ca5149c12fe2ccbb258350cf8be07b25a8cc7ad77f87a7f3e1cda44",
       "homepage": "https://github.com/hjdhnx/drpy-node"
     }
   ]

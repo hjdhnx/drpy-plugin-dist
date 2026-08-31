@@ -25,8 +25,12 @@ manifest = json.load(open(mp, encoding='utf-8')) if os.path.exists(mp) else {}
 manifest.update({'name': name, 'version': version, 'runtime': manifest.get('runtime', 'binary')})
 # 递归打包：含子目录（如 captcha-bypass 的 models/、public/），zip 内保留相对路径
 files = []
+EXCLUDE_DIRS = {'.venv', 'venv', '__pycache__', 'src', '.git'}  # venv不可移植必须排除；src为hongguo-bridge运行缓存
 for root, dirs, names in os.walk(src):
+    dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
     for f in sorted(names):
+        if f.endswith('.pyc'):
+            continue
         p = os.path.join(root, f)
         if p == mp:
             continue
