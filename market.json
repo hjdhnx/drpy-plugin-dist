@@ -1,6 +1,6 @@
 {
   "name": "drpy-node 官方插件分发",
-  "updated": "2026-08-31T14:45:38Z",
+  "updated": "2026-08-31T17:02:15Z",
   "plugins": [
     {
       "name": "req-proxy",
@@ -54,7 +54,7 @@
     },
     {
       "name": "mediaProxy",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "title": "Go 媒体代理服务",
       "desc": "go媒体代理服务",
       "author": "hjdhnx",
@@ -65,8 +65,8 @@
         "linux",
         "android"
       ],
-      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/v1.0.0/mediaProxy-1.0.0.zip",
-      "sha256": "b77c3a52a6bb49bcdb685c4e2717f4d2752a202fabad17da2e9cdc464b77c5dd",
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/mediaProxy-v1.1.0/mediaProxy-1.1.0.zip",
+      "sha256": "3d05a0d00bd2520d7df76d271902106e6157e63460fdfbaa7e724d95f1ac6a5f",
       "homepage": "https://github.com/hjdhnx/drpy-node"
     },
     {
