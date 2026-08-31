@@ -1,6 +1,6 @@
 {
   "name": "drpy-node 官方插件分发",
-  "updated": "2026-08-31T11:23:33Z",
+  "updated": "2026-08-31T11:24:20Z",
   "plugins": [
     {
       "name": "req-proxy",
@@ -129,7 +129,7 @@
     },
     {
       "name": "hongguo-bridge",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "title": "红果短剧播放桥",
       "desc": "红果短剧签名/解密播放桥（Flask）：为 TVBox Python 源或第三方源提供接口签名、CENC 解密与 MP4 缓存。端口配置三选一：启动参数 --port 8888 ＞ 环境变量 APP_PORT ＞ config.json（默认 9979）；/health 探活。",
       "author": "local",
@@ -140,8 +140,8 @@
       "platforms": [
         "all"
       ],
-      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/hongguo-bridge-v0.1.1/hongguo-bridge-0.1.1.zip",
-      "sha256": "08f296eccceb8bdc486961f9e871d28acc4e1e2a58f537eb373a0529d5f01ff3",
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/hongguo-bridge-v0.1.2/hongguo-bridge-0.1.2.zip",
+      "sha256": "ac5a546d6afacaaa98e8907c01f61b203eb25a9625c87ad6e1d594dcf260b3be",
       "homepage": ""
     }
   ]
