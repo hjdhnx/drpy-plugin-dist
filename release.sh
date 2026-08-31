@@ -56,7 +56,7 @@ else:  # 新插件上架：从包内 manifest 生成清单条目
     import zipfile
     with zipfile.ZipFile(f"dist/{name}-{version}.zip") as z:
         mf = json.loads(z.read('plugin.json'))
-    platforms = sorted(set(mf.get('binaries', {k: '' for k in ()}).keys())) or ['win32']
+    platforms = sorted(set(mf.get('binaries', {k: '' for k in ()}).keys())) or mf.get('platforms') or ['win32']  # python/node 全平台型无 binaries，尊重 manifest.platforms（如 ['all']）
     entry = {
         "name": name, "version": version, "title": mf.get('title', name), "desc": mf.get('desc', ''),
         "author": mf.get('author', 'hjdhnx'), "runtime": mf.get('runtime', 'binary'),
