@@ -131,8 +131,8 @@
       "name": "hongguo-bridge",
       "version": "0.1.2",
       "title": "红果短剧播放桥",
-      "desc": "红果短剧签名/解密播放桥（Flask）：为 TVBox Python 源或第三方源提供接口签名、CENC 解密与 MP4 缓存。端口配置三选一：启动参数 --port 8888 ＞ 环境变量 APP_PORT ＞ config.json（默认 9979）；/health 探活。",
-      "author": "local",
+      "desc": "红果短剧签名/解密播放桥（Flask）：为红果短剧[短]等 ds 源提供接口签名、CENC 解密与 MP4 缓存（302 到本地解密文件，支持 Range）。默认端口 9877（--port 参数＞config.json port＞9979），/health 探活；首次播放每集需现场解密数十秒，之后命中缓存秒开。同机部署无需改配置；插件跨机部署时把 config.json 的 public_url 改为插件机器可达地址。",
+      "author": "hjdhnx",
       "runtime": "python",
       "entry": "bridge.py",
       "params": "",
@@ -142,7 +142,7 @@
       ],
       "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/hongguo-bridge-v0.1.2/hongguo-bridge-0.1.2.zip",
       "sha256": "ac5a546d6afacaaa98e8907c01f61b203eb25a9625c87ad6e1d594dcf260b3be",
-      "homepage": ""
+      "homepage": "https://github.com/hjdhnx/drpy-node"
     }
   ]
 }
