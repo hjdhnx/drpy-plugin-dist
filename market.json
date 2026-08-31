@@ -1,6 +1,6 @@
 {
   "name": "drpy-node 官方插件分发",
-  "updated": "2026-08-31T09:35:57Z",
+  "updated": "2026-08-31T09:37:33Z",
   "plugins": [
     {
       "name": "req-proxy",
@@ -124,7 +124,7 @@
         "win32-x64"
       ],
       "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/cctv-h5e-v1.1.1/cctv-h5e-1.1.1.zip",
-      "sha256": "579d2ad12ff7543cf45dbf137cd20a99c39495b690c89f39e33ed331ff4c252d",
+      "sha256": "b8b1c979d3eaf689d28798bb94df980c7164252b46e84cc24385ce73ae2c42b8",
       "homepage": "https://github.com/hjdhnx/drpy-node"
     }
   ]
