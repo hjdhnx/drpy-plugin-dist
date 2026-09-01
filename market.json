@@ -91,9 +91,9 @@
     },
     {
       "name": "clash",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "title": "Clash 代理内核",
-      "desc": "Clash(mihomo) 代理内核 + metacubexd/dashboard 控制面板。仅支持 linux amd64；配置 config.yaml（端口/密钥），面板 /ui/；启动参数与环境变量见 README",
+      "desc": "Clash(mihomo) 代理内核 + 控制面板 + 订阅管理。面板路径 /clash/；仅支持 linux amd64",
       "author": "EylinSir",
       "runtime": "node",
       "entry": "index.js",
@@ -102,8 +102,8 @@
       "platforms": [
         "linux"
       ],
-      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/clash-v1.0.0/clash-1.0.0.zip",
-      "sha256": "68a3b5aca36d8bb5edb8080c9d7c057077dba88b832252752a66dcdb2bbe4f93",
+      "download": "https://github.com/hjdhnx/drpy-plugin-dist/releases/download/clash-v1.1.0/clash-1.1.0.zip",
+      "sha256": "3dc711cd2ccfb3ec82ff58fbb1d2802264bee5d29186d25d56eab0d5e16f3193",
       "homepage": ""
     },
     {
